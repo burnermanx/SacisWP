@@ -15,6 +15,8 @@ namespace SACIS
         public PivotPage1()
         {
             InitializeComponent();
+            ApplicationBar = ((ApplicationBar)Application.Current.Resources["MsgBar"]);
+            
             /*
             ApplicationBar = new ApplicationBar();
 

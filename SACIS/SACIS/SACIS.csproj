@@ -99,6 +99,9 @@
     <Compile Include="Contatos.xaml.cs">
       <DependentUpon>Contatos.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NovaMensagem.xaml.cs">
+      <DependentUpon>NovaMensagem.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Sobre.xaml.cs">
       <DependentUpon>Sobre.xaml</DependentUpon>
     </Compile>
@@ -129,6 +132,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Contatos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NovaMensagem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -179,6 +186,7 @@
     <Content Include="Images\appbar.lock.png" />
     <Content Include="Images\appbar.people.multiple.png" />
     <Content Include="Images\appbar.unlock.png" />
+    <Content Include="Images\attach.png" />
     <Content Include="Images\back.png" />
     <Content Include="Images\basecircle.png" />
     <Content Include="Images\cancel.png" />
@@ -207,6 +215,7 @@
     <Content Include="Images\questionmark.png" />
     <Content Include="Images\refresh.png" />
     <Content Include="Images\save.png" />
+    <Content Include="Images\send.message.png" />
     <Content Include="Images\share.png" />
     <Content Include="Images\stop.png" />
     <Content Include="Images\sync.png" />

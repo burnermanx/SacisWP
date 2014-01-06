@@ -55,20 +55,19 @@ namespace SACIS
                 // Caution:- Use this under debug mode only. Application that disables user idle detection will continue to run
                 // and consume battery power when the user is not using the phone.
                 PhoneApplicationService.Current.UserIdleDetectionMode = IdleDetectionMode.Disabled;
-            }
-
+            }            
         }
 
         //Implementacao das AppBars no Pivot
-        private void AppBar_Contatos(object sender, EventArgs e)
+        private void ab_Contatos(object sender, EventArgs e)
         {
-            MessageBox.Show("Button 1 works!");
+            (Application.Current.RootVisual as PhoneApplicationFrame).Navigate(new Uri("/Contatos.xaml", UriKind.Relative));
             //Do work for your application here.
         }
 
-        private void AppBar_NovaMensagem(object sender, EventArgs e)
+        private void ab_NovaMensagem(object sender, EventArgs e)
         {
-            MessageBox.Show("Button 2 works!");
+            (Application.Current.RootVisual as PhoneApplicationFrame).Navigate(new Uri("/NovaMensagem.xaml", UriKind.Relative));
             //Do work for your application here.
         }
 
@@ -83,6 +82,8 @@ namespace SACIS
             MessageBox.Show("Menu item 2 works!");
             //Do work for your application here.
         }
+
+         
 
         // Code to execute when the application is launching (eg, from Start)
         // This code will not execute when the application is reactivated
